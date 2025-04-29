@@ -1,7 +1,7 @@
 import React from 'react';
 import './Login.css'; // <-- Important: connect the CSS
 
-function Login() {
+export default function login() {
   return (
     <div className="page">
       {/* Top Navigation Bar */}
