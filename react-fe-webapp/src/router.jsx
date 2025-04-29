@@ -1,7 +1,6 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
 import Login from "./views/admin/login.jsx"; // ✅ add this line
 import NotFound from "./views/notfound.jsx";
-import LayoutExample from "./components/layoutexample.jsx";
 
 const route = createBrowserRouter([
   {
