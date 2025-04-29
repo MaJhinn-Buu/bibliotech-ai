@@ -1,13 +1,11 @@
+import AppRouter from './router';
 
 function App() {
-
   return (
-    <>
-      <div>
-        <h2>KAMUSTA</h2>
-      </div>
-    </>
-  )
+    <div className="App">
+      <AppRouter />
+    </div>
+  );
 }
 
-export default App
+export default App;
