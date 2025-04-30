@@ -18,6 +18,10 @@ const route = createBrowserRouter ( [
                 element: <Login />
             },
             {
+                path: '/database',
+                element: <DatabaseView />
+            },
+            {
                 path: '*',
                 element: <NotFound />
             }
