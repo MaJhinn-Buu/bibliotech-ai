@@ -1,19 +1,36 @@
-import { createBrowserRouter, Navigate } from "react-router-dom";
-import Login from "./views/admin/login.jsx"; // ✅ add this line
-import NotFound from "./views/notfound.jsx";
+import { createBrowserRouter, Navigate } from 'react-router-dom';
+import LayoutExample from './components/LayoutExample';
+import StudentDashboard from './views/student/pages/StudentDashboard';
+import Login from './views/admin/Login'; // ✅ Adjust this path if needed
+import NotFound from './views/NotFound';
+import GameInventory from './views/student/pages/GameInventory';
+import AdminGameManager from './views/admin/pages/AdminGameManager';
 
-const route = createBrowserRouter([
+
+const router = createBrowserRouter([
   {
     path: '/',
     element: <LayoutExample />,
     children: [
       {
-        path: '/',
+        index: true,
         element: <Navigate to="/login" />
       },
       {
-        path: '/login',
+        path: 'login',
         element: <Login />
+      },
+      {
+        path: 'student-dashboard',
+        element: <StudentDashboard />
+      },
+      {
+        path: 'game-inventory',
+        element: <GameInventory />
+      },
+      {
+        path: '/admin/games',
+        element: <AdminGameManager />
       },
       {
         path: '*',
@@ -23,4 +40,4 @@ const route = createBrowserRouter([
   }
 ]);
 
-export default route;
+export default router;

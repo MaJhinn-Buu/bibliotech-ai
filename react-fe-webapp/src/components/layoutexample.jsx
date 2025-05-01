@@ -1,9 +1,12 @@
-import { Outlet } from "react-router-dom";
+import { Outlet } from 'react-router-dom';
 
-export default function layoutexample() {
-    return (
-        <>
-        <Outlet/>
-        </>
-    )
-}
+const LayoutExample = () => {
+  return (
+    <div>
+      {/* You can add a navbar or header here */}
+      <Outlet />
+    </div>
+  );
+};
+
+export default LayoutExample;
