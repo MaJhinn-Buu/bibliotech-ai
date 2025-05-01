@@ -1,5 +1,6 @@
 import React from 'react';
 import './Login.css'; // <-- Important: connect the CSS
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function Login() {
   return (
@@ -17,7 +18,7 @@ function Login() {
             <div className="brand-name">Biblio.<span style={{ color: 'white' }}>tech.ai</span></div>
           </div>
         </div>
-        <div className="info-icon">ℹ️</div>
+        <div className="info-icon"><i className="fas fa-info-circle"></i> {/* Info Icon */}</div>
       </div>
 
       {/* Main Content */}

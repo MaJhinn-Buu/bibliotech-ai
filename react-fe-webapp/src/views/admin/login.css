@@ -1,103 +1,122 @@
 /* Login.css */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  background-color: #ecb328;
+}
+
 .page {
-    background-color: #f2b600;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .navbar {
-    background-color: #1e1e1e;
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    color: white;
-  }
-  
-  .nav-left {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .logo {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-  }
-  
-  .room-manager {
-    font-size: 10px;
-    color: #d1d1d1;
-  }
-  
-  .brand-name {
-    font-size: 18px;
-    font-weight: bold;
-    color: #f2b600;
-  }
-  
-  .info-icon {
-    font-size: 24px;
-  }
-  
-  .main {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    padding: 20px;
-  }
-  
-  .tiger-image {
-    height: 300px;
-    width: 300px;
-    object-fit: cover;
-  }
-  
-  .login-box {
-    background-color: #1e1e1e;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-    width: 300px;
-  }
-  
-  .login-title {
-    text-align: center;
-    color: white;
-    margin-bottom: 20px;
-  }
-  
-  .input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    background-color: #333;
-    color: white;
-  }
-  
-  .forgot-password {
-    text-align: right;
-    font-size: 12px;
-    color: #d1d1d1;
-    cursor: pointer;
-    margin-bottom: 10px;
-  }
-  
-  .login-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #f2b600;
-    border: none;
-    border-radius: 20px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
+  background-color: #ecb328;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  background-color: #232323;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  color: white;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.room-manager {
+  font-size: 15px;
+  color: #d1d1d1;
+}
+
+.brand-name {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ecb328;
+}
+
+.info-icon {
+  font-size: 24px;
+}
+
+.main {
+  height: 100vh;
+  position: relative;
+}
+
+.login-box {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #232323;
+  padding: 50px; /* Increase padding for more space inside */
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  width: 500px; /* Increase the width to make it bigger */
+  min-height: 350px; /* Increase the min-height for a taller box */
+}
+
+.tiger-image {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+}
+
+.login-title {
+  text-align: center;
+  color: white;
+  font-size: 35px; /* Increase font size to make the text bigger */
+  margin-bottom: 40px; /* Reduce bottom margin */
+  margin-top: -20px; /* Move the title slightly upwards */
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #333;
+  color: white;
+}
+
+.forgot-password {
+  text-align: right;
+  font-size: 12px;
+  color: #d1d1d1;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: text-decoration 0.3s ease; /* Smooth transition */
+}
+
+.forgot-password:hover {
+  text-decoration: underline; /* Underline the text on hover */
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #ecb328;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
