@@ -1,7 +1,7 @@
 import { createBrowserRouter, Navigate } from 'react-router-dom';
 import LayoutExample from './components/LayoutExample';
 import StudentDashboard from './views/student/pages/StudentDashboard';
-import Login from './views/admin/Login'; // ✅ Adjust this path if needed
+import Login from './views/admin/login'; // ✅ Adjust this path if needed
 import NotFound from './views/NotFound';
 import GameInventory from './views/student/pages/GameInventory';
 import AdminGameManager from './views/admin/pages/AdminGameManager';
