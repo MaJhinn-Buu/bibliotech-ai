@@ -67,11 +67,11 @@ html, body, #root {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #232323;
-  padding: 50px; /* Increase padding for more space inside */
+  padding: 50px; /* Increased padding */
   border-radius: 10px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-  width: 500px; /* Increase the width to make it bigger */
-  min-height: 350px; /* Increase the min-height for a taller box */
+  width: 500px; /* Increased width */
+  min-height: 350px; /* Increased min-height */
 }
 
 .tiger-image {
@@ -83,9 +83,9 @@ html, body, #root {
 .login-title {
   text-align: center;
   color: white;
-  font-size: 35px; /* Increase font size to make the text bigger */
-  margin-bottom: 40px; /* Reduce bottom margin */
-  margin-top: -20px; /* Move the title slightly upwards */
+  font-size: 35px; /* Increased font size */
+  margin-bottom: 40px;
+  margin-top: -20px;
 }
 
 .input {
@@ -104,11 +104,11 @@ html, body, #root {
   color: #d1d1d1;
   cursor: pointer;
   margin-bottom: 20px;
-  transition: text-decoration 0.3s ease; /* Smooth transition */
+  transition: text-decoration 0.3s ease;
 }
 
 .forgot-password:hover {
-  text-decoration: underline; /* Underline the text on hover */
+  text-decoration: underline;
 }
 
 .login-button {

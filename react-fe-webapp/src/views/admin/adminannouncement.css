@@ -1,0 +1,173 @@
+/* Import M PLUS 2 font */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@400;500;700&display=swap');
+
+/* Reset + base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  background-color: #ecb328;
+}
+
+.page {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar on the left */
+.sidebar {
+  background-color: #232323;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+  color: white;
+  position: relative;
+  height: 100%;
+}
+
+/* Top: logo + text flex */
+.nav-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.nav-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.room-manager {
+  font-size: 15px;
+  color: #d1d1d1;
+}
+
+.brand-name {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ecb328;
+}
+
+/* Sidebar Menu */
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 30px;
+  flex-grow: 1;
+}
+
+.sidebar-item {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: 'M PLUS 2', sans-serif;
+}
+
+.sidebar-item:hover {
+  color: #ecb328;
+}
+
+/* Info icon at the bottom left */
+.info-icon {
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.main {
+  flex: 1;
+  background-color: #ecb328;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.announcement-heading {
+  position: absolute;
+  top: 30px;
+  left: 30px; /* Adjusted to left side */
+  font-size: 32px;
+  color: white;
+  font-family: 'M PLUS 2', sans-serif;
+}
+
+.big-card {
+  background-color: white;
+  width: 80%; /* Adjust the card size */
+  height: 80%; /* Adjust the card height */
+  border-radius: 20px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: 'M PLUS 2', sans-serif;
+  text-align: center;
+}
+
+.title-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px; /* Add space below the input */
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 10px;
+  background-color: #f1f1f1; /* Light grey background */
+  font-size: 18px;
+  color: #333;
+}
+
+.title-input::placeholder {
+  color: #999; /* Grey placeholder text */
+}
+
+.message-input {
+  width: 100%;
+  height: 90%; /* Make this box smaller, so it's not too big */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  font-size: 18px;
+  color: #333;
+  resize: none; /* Disables resizing */
+}
+
+.message-input::placeholder {
+  color: #999; /* Grey placeholder text */
+}
+
+/* Post Button */
+.post-button {
+  width: 150px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 20px;
+  align-self: flex-end; /* Position button to the bottom right */
+}
+
+.post-button:hover {
+  background-color: #333;
+}

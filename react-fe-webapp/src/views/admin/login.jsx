@@ -1,8 +1,17 @@
 import React from 'react';
-import './Login.css'; // <-- Important: connect the CSS
+import { useNavigate } from 'react-router-dom';
+import './Login.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function Login() {
+  const navigate = useNavigate();
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    // Add your login validation logic here if needed
+    navigate('/admin-games-inventory'); // ✅ This matches your router
+  };
+
   return (
     <div className="page">
       {/* Top Navigation Bar */}
@@ -15,10 +24,14 @@ function Login() {
           />
           <div>
             <div className="room-manager">Room Manager</div>
-            <div className="brand-name">Biblio.<span style={{ color: 'white' }}>tech.ai</span></div>
+            <div className="brand-name">
+              Biblio.<span style={{ color: 'white' }}>tech.ai</span>
+            </div>
           </div>
         </div>
-        <div className="info-icon"><i className="fas fa-info-circle"></i> {/* Info Icon */}</div>
+        <div className="info-icon">
+          <i className="fas fa-info-circle"></i>
+        </div>
       </div>
 
       {/* Main Content */}
@@ -33,7 +46,7 @@ function Login() {
         {/* Login Box */}
         <div className="login-box">
           <h2 className="login-title">LOGIN</h2>
-          <form>
+          <form onSubmit={handleLogin}>
             <input type="text" placeholder="Username" className="input" />
             <input type="password" placeholder="Password" className="input" />
             <div className="forgot-password">Forgot Password</div>

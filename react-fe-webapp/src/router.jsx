@@ -4,6 +4,9 @@ import StudentDashboard from './views/student/pages/StudentDashboard';
 import Login from './views/admin/login'; // ✅ Adjust this path if needed
 import NotFound from './views/notfound';
 import GameInventory from './views/student/pages/GameInventory';
+import AdminGamesInventory from './views/admin/admingamesinventory';
+import AdminCRUD from './views/admin/admincrud';
+import AdminAnnouncement from './views/admin/adminannouncement';
 
 
 const router = createBrowserRouter([
@@ -18,6 +21,18 @@ const router = createBrowserRouter([
       {
         path: 'login',
         element: <Login />
+      },
+      {
+        path: 'admin-games-inventory',
+        element: <AdminGamesInventory />
+      },
+      {
+        path: 'admin-crud',
+        element: <AdminCRUD />
+      },
+      {
+        path: 'admin-announcement',
+        element: <AdminAnnouncement />
       },
       {
         path: 'student-dashboard',
